@@ -66,6 +66,7 @@ header img {
     margin: 0 auto;
 	}
 }
+/*section hero*/
 .hero {
 	height: calc(100vh - 50px);
 	background-size: cover;
@@ -86,6 +87,14 @@ header img {
 }
 .slogan> h2 {
 	font-weight: 800;
+}
+/*section hero for mobile*/
+@media (max-width: 767px){
+	.slogan {
+		font-size: 28px;
+		text-align: center;
+		margin-top: 20%;
+	}	
 }
 /*section- advantage*/
 [class*="col-"] {
