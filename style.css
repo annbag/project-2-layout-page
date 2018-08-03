@@ -265,6 +265,32 @@ header img {
 	transform: scale(0.8);
 	cursor: pointer;
 }
+/*section team for mobile*/
+@media (max-width: 767px){
+	[class*="col-"] {
+		width: 100%;		
+	}
+	.worker img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.team .worker .layer {
+		background: none;
+		transform: none;
+		color: #fff;	
+		padding-top: 100px;	
+		left: 20%;
+	}
+	.team .worker:hover .layer {
+		transform: none;
+		cursor: context-menu;		
+	}	
+	.layer h1 {
+		padding-top: 0;
+		text-align: center;
+	}
+}
 /*promotion section*/
 .promotion {
 	margin-top: 30px;
