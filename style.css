@@ -49,6 +49,23 @@ header>nav ul>li>a:hover {
 header img {
 	padding: 10px 0;
 }
+/*nav for mobile*/
+@media (max-width: 767px){
+	header li {
+  	display: block;  		
+	}
+	header nav {	
+		height: 350px;
+	}
+	header ul {
+		float: none;		
+	}
+	header img {
+		float: none;
+		display: block;
+    margin: 0 auto;
+	}
+}
 .hero {
 	height: calc(100vh - 50px);
 	background-size: cover;
