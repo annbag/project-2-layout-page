@@ -161,6 +161,12 @@ header img {
 	font-family: 'Open Sans';
 	text-align: center;
 }
+/*section advantage for mobile*/
+@media(max-width: 767px) {
+	.advantage [class*="col-"] {
+		width: 100%;
+	}
+}
 /*section featured*/
 .featured h1 {
 	font-size: 60px;
@@ -201,7 +207,27 @@ header img {
 	transform: scale(1);
 	cursor: pointer;	
 }
-
+/*section gallery for mobile*/
+@media (max-width: 767px){
+	.gallery [class*="col-"] {
+		width: 100%;		
+	}
+	.gallery .item .layer {
+		position: absolute;
+		background: none;
+		transform: none;
+		color: #fff;
+		transition: none;
+		padding-top: 90px;
+	}
+	.gallery .item:hover .layer {
+		transform: none;
+		cursor: auto;	
+	}
+	.gallery .fa:hover {
+		cursor: pointer;
+	}	
+}
 /*team*/
 .team [class*="col-"] {
 	padding: 0;
