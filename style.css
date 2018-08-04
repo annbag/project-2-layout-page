@@ -314,6 +314,20 @@ header img {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
+/*promotion section for mobile*/
+@media (max-width: 767px) {
+	.promotion img {
+		padding-top: 40px;
+		width: 60%;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.text {
+	text-align: center;
+	margin: 0 auto;
+	}
+}
 /*section numbers*/
 .number h1 {
 	text-align: center;
@@ -332,6 +346,11 @@ header img {
 	font-weight: bold;	
 	margin-top: 0px;
 }
+/*section number for mobile*/
+	.number h1 {
+		margin-top: 0px;
+	}
+
 /*section footer*/
 .footer {
 	background-color: #313234;
