@@ -204,6 +204,11 @@ header img {
 	text-align: center;	
 	font-family: 'Open Sans', sans-serif;
 }
+@media (max-width: 767px){
+	.featured h1 {
+		font-size: 36px;
+	}
+}
 /*Section gallery*/
 .gallery [class*="col-"] {
 	padding: 0;
@@ -339,9 +344,9 @@ header img {
 }
 .promotion img {
 	padding-top: 40px;
-	width: 60%;
 	float: right;
 }
+
 .text {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -349,8 +354,7 @@ header img {
 /*promotion section for mobile*/
 @media (max-width: 767px) {
 	.promotion img {
-		padding-top: 40px;
-		width: 60%;
+		padding-top: 40px;		
 		float: none;
 		display: block;
 		margin: 0 auto;
@@ -394,19 +398,22 @@ header img {
 }
 .footer h1::after {
 	content: '';
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%; 
-    left: calc(100% + 15px);      
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%; 
+  left: calc(100% + 15px);      
 }
 .footer p {
 	margin: 0;
 	padding: 10px;
 	color: #fff;
 	text-align: left;		
+}
+.foot p {
+	text-align: center;
 }
 .social {
 	margin: 5vh auto;
@@ -453,9 +460,22 @@ header img {
 /*section footer to mobile*/
 @media (max-width: 767px) {
 	.footer h1 {
-		margin-left: 5vw;
+		text-align: center;
+		border-bottom: 3px solid #fff;
+		padding-bottom: 5px;
+		width: 100%;		
 	}
 	.footer p {
 		text-align: center;
+	}
+	.footer h1::after {
+		display: none;
+	}
+	.footer .one {
+		padding: 0;
+	}
+	.footer .two {
+		padding: 0;
+		margin-top: -10px;
 	}
 }
